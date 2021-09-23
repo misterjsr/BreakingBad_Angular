@@ -1,3 +1,3 @@
-# angular-kjwyyh
+Prueba técnica de Angular
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-kjwyyh)
+Enlace para ver el resultado: https://angular-kjwyyh.stackblitz.io/
