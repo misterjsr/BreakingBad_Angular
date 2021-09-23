@@ -1,0 +1,11 @@
+<div id="openModal" class="modalDialog">
+  <div *ngFor="let actor of modal">
+    <img src="{{actor.img}}" alt="Foto de {{actor.name}}" width="100%">
+    <h2>{{actor.name}}</h2>
+    <p>También conocido como {{actor.nickname}} </p>              
+    <p>Ocupación: {{actor.occupation}} </p>
+    <p>Estado: {{actor.status}} </p>
+    <a href="#close" title="Close" class="closer"(click)="clearModal()"><span class="P br p">C</span><span class="p">errar</span></a>
+  </div>
+</div>
+        

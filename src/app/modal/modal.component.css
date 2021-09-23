@@ -1,0 +1,75 @@
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding-bottom:13px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.modalDialog > div > img {
+	border-radius: 10px 10px 0 0;
+  max-height: 500px;
+}
+
+.closer {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	opacity: 0.3;
+	text-decoration-line: none;
+	padding: 20px;
+	background-color: #2b2b2b;
+	border-radius: 10px;
+  }
+  .closer:hover {
+	opacity: 1;
+  }
+  .P {
+    padding:10px;
+    background:green;
+    border:3px solid #fff;
+    background: #46a08c; /* Old browsers */
+    background: -webkit-linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);
+    background: -moz-linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);
+    background: -o-linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);
+    background: linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);
+    box-shadow:inset 0px 2px 2px rgba(50,50,50,.6);  
+  }
+.p {
+    font-family: sans-serif;
+    color: #fff;
+    margin:0;
+  }
+.br {
+    padding:10px 10px;   
+  }
+
+ h2, p{
+	  margin: 10px;
+  }
+ 
+ 

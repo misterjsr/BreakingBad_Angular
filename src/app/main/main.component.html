@@ -1,0 +1,35 @@
+<div class="main-background">
+  <div class="container">
+    <h1>Listado de personajes</h1>
+    <button (click)="seeAll()" class="botonTodos"><span class="P br p">V</span><span class="p">er todos</span></button>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <input type="text" class="form-control" name="search" placeholder="Introduce el nombre a buscar..." [(ngModel)]="search">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <table class="table table-striped" *ngIf="search.length > 0">
+          <thead>
+            <tr>
+              <th>Personaje</th>
+              <th>Actor</th>
+              <th>Seleccionar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let character of listaActores | filter:search">
+              <td>{{character.name}}</td>
+              <td>{{character.portrayed}}</td>            
+              <td><a  href="#openModal" (click)="seeModal(character)">Ver info</a><app-modal [character] = "character"></app-modal></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
